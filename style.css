@@ -120,9 +120,8 @@ a {
   text-decoration: none;
 }
 
-.startedBtn a {
-  color: #feb633;
-  text-decoration: none;
+button a {
+  color: #fff;
 }
 
 .container {
