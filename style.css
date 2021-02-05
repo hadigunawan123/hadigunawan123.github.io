@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* dark mode versi gw */
-body.dark {
+/* body.dark {
   background-color: #292c35;
 }
 body.dark p,
@@ -59,12 +59,7 @@ body.dark li a {
 }
 body.dark li p {
   color: #f1c40f;
-  /* font-size: 20px; */
 }
-
-/* menu.dark {
-  color: #f1c40f;
-} */
 
 body.dark button * {
   color: #fff;
@@ -113,7 +108,7 @@ body.dark button * {
 
 .fa-sun {
   color: #f39c12;
-}
+} */
 
 /* akhir dari dark mode */
 
@@ -122,6 +117,11 @@ html {
 }
 
 a {
+  text-decoration: none;
+}
+
+.startedBtn a {
+  color: #feb633;
   text-decoration: none;
 }
 
