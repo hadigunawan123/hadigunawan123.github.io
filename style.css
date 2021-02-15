@@ -124,6 +124,10 @@ button a {
   color: #fff;
 }
 
+#btnBlue a {
+  color: #2c95de;
+}
+
 .container {
   width: 85%;
   max-width: 1100px;
