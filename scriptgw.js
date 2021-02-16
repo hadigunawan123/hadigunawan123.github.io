@@ -15,6 +15,34 @@ window.addEventListener("change", () => {
 	document.body.classList.toggle('dark');
 });
 
+//btn showallert bawaan browser
+// function showAlert() {
+//     if (document.forms['target'].email.value == 0){
+//         alert("Enter a valid message, and the email must be (example@example.com)");
+//     } else {
+//         var myText = "Your message has been sent successfully!\rNote: Only valid format of message will be responded";
+//         alert (myText);  
+//     }
+//   }
+
+
+//btn contact show alert pake sweetalert2
+function showAlert() {
+    if (document.forms['target'].email.value == 0){
+        swal.fire({
+            icon: 'error',
+            title: 'Enter a valid message',
+            text: 'And reminder: email format must be (example@example.com)!',
+          });
+    } else {
+        swal.fire({
+            icon: 'success',
+            title: 'Your message has been sent successfully!',
+            text: 'Note: Only valid format of message will be responded, make sure your email is valid',
+          });
+    }
+  }
+
 //akhir dr darkmode
 
 // .label .ball {

@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/b0cd25bb74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <title>Hadi's Portfolio</title>
 </head>
 <body>
@@ -51,10 +52,11 @@
                 <div class="left" data-aos="fade-right">
                     <H1>Hadi Gunawan.</H1>
                     <P>Hello, my name is Hadi Gunawan. I am an IT student of Pamulang University</P>
-                    <button><a href="#contact">Work With Me</button></a>
+                    <a href="#contact"><button>Work With Me</button></a>
+                    <!-- <button><a href="#contact">Work With Me</button></a> -->
                 </div>
                 <div class="right" data-aos="fade-left" data-aos-delay="500">
-                    <img src="images/hadi4.png" alt="Reddi Flryd">
+                    <img src="images/hadi4.png" alt="hadi_gunawan">
                 </div>
             </div>
         </div>
@@ -71,8 +73,8 @@
                 <p>Hello, I'm Hadi Gunawan. I'm an Informatics Engineering student in Pamulang University</p>
                 <p>I am focusing on Web and Android development especially Front End Developer</p>
 
-                <button class="btnLeft"><a href="#portfolio"> View Works</button></a>
-                <button class="btnRight"><a href="https://drive.google.com/file/d/1SV2W_aCqwkwnMspnsa8TxgTqeLni9E2I/view?usp=sharing" target="_blank">Download CV</button></a>
+                <a href="#portfolio"><button class="btnLeft" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine"> View Works</button></a>
+                <a href="https://drive.google.com/file/d/1SV2W_aCqwkwnMspnsa8TxgTqeLni9E2I/view?usp=sharing" target="_blank"><button class="btnRight" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">Download CV</button></a>
             </div>
         </div>
     </section>
@@ -253,7 +255,7 @@
                 <p>I’d love to hear from you. Please share your thoughts in the form and I’ll be in touch.</p>
             </div>
             <div class="right" data-aos="zoom-in" data-aos-duration="2000">
-                <button id="btnBlue"><a href="#contact">Get Started</button></a>
+                <a href="#contact"><button id="btnBlue">Get Started</button></a>
             </div>
         </div>
     </section>
@@ -272,21 +274,21 @@
                     <p><small>+62818123456</small></p>
                 </div>
                 <div class="socialIcons">
-                    <a href="#"><i class="fab fa-facebook-f" target="_blank"></i></a>
-                    <a href="#"><i class="fab fa-twitter" target="_blank"></i></a>
-                    <a href="#"><i class="fab fa-instagram" target="_blank"></i></a>
-                    <a href="#"><i class="fab fa-dribbble" target="_blank"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/hadigunawan__/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
                     <a href="https://github.com/hadigunawan123" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
 
             <div class="right">
-                <form id="target">
-                    <input type="text" id="name" placeholder="What's your Name">
-                    <input type="email" id="email" placeholder="Your fancy email">
+                <form id="target" name="target">
+                    <input type="text" id="name" placeholder="What's your Name" required>
+                    <input type="email" id="email" title="Email (format: xxx@xxx.xxx)" pattern="[^ @]*@[^ @]*" placeholder="Your fancy email" required>
                     <input type="text" id="companyName" placeholder="Company Name">
-                    <textarea name="message"  cols="30" rows="10" placeholder="More information will be helpfull"></textarea>
-                    <button class="btn">Submit</button>
+                    <textarea name="message"  cols="30" rows="10" placeholder="More information will be helpfull" required></textarea>
+                    <button class="btn" id="btnSubmit" type="button" onclick="showAlert()">Submit</button>
                 </form>
             </div>
         </div>
@@ -303,11 +305,11 @@
             </div>
             <div class="right">
                 <span class="socialIcons">
-                    <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
-                    <a href="#"><i class="fab fa-twitter" target="_blank"></i></a>
-                    <a href="#"><i class="fab fa-instagram" target="_blank"></i></a>
-                    <a href="#"><i class="fab fa-dribbble" target="_blank"></i></a>
-                    <a href="https://github.com/hadigunawan123"><i class="fab fa-github" target="_blank"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/hadigunawan__/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://github.com/hadigunawan123" target="_blank"><i class="fab fa-github"></i></a>
                 </span>
                 <!-- <small>Copyright &copy; 2021</small> -->
             </div>
