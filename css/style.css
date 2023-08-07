@@ -127,10 +127,11 @@ section.fade-out {
 
 /* Section title */
 .section-title {
-  padding: 15px 15px;
+  padding: 0 15px;
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 15px;
 }
 .section-title h2 {
   font-size: 40px;
