@@ -697,11 +697,14 @@ button {
 .portfolio-item h3 {
   font-size: 20px;
   text-transform: capitalize;
-  margin-top: 20px;
   margin: 20px 0;
 }
 .portfolio-item-details {
   display: none;
+}
+
+.portfolio-item-title h3 {
+  margin-top: 20px;
 }
 
 /* Portfolio popup */
