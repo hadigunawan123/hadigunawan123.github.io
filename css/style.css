@@ -703,10 +703,6 @@ button {
   display: none;
 }
 
-.portfolio-item-title h3 {
-  margin-top: 20px;
-}
-
 /* Portfolio popup */
 .portfolio-popup {
   position: fixed;
